@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-    document.getElementById("div").document.addEventListener("click", function() {
-        alert("Hola, soy el div!");
+
+    document.getElementById("but").addEventListener("click", function () {    
+        alert("Hola!");
+        event.stopPropagation()
+    });
+
+    document.getElementById("div").addEventListener("click", function() {
+        alert("Hola, soy el Div");        
     });
 });
